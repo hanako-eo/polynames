@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Helvetica Neue', arial, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  height: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 100px;
+}
+
+.btn{
+  border: none;
+  border-radius: 16px;
+  margin-top: 24px;
+  padding: .5em 1em;
+  background-color: #59CAFC;
+  color: white;
+  text-transform: uppercase;
+}
+
+a{
+  color: #FF6E83;
+}
