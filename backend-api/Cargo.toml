@@ -4,10 +4,13 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+actix = "0.13"
 actix-web = "4.8"
+actix-web-actors = "4.3"
 confy = "0.6"
 duckdb = { version = "0.10", features = ["bundled"] }
 env_logger = "0.11"
+inline_colorization = "0.1"
 rand = "0.8"
 serde = { version = "1.0", features = ["derive"] }
 tokio = { version = "1.38", features = ["full"] }

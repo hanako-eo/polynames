@@ -56,7 +56,12 @@ where
         let connection = get_connection().read().await;
 
         let mut query = connection.prepare(
-            format!("SELECT * FROM {} WHERE {column} {} ? LIMIT 1", Self::TABLE, op.as_str()).as_str(),
+            format!(
+                "SELECT * FROM {} WHERE {column} {} ? LIMIT 1",
+                Self::TABLE,
+                op.as_str()
+            )
+            .as_str(),
         )?;
 
         let mut result = Vec::with_capacity(values.len());
